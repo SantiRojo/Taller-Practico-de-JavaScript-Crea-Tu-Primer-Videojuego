@@ -35,13 +35,30 @@ function startGame() {
 
     console.log({map, mapRows, mapRowCols});
 
-    for (let row = 1; row <= 10; row++) {
+    // Render del mapa
+
+/*     for (let row = 1; row <= 10; row++) {
 
         for (let col = 1; col <= 10; col++) {
         game.fillText(emojis[mapRowCols[row - 1][col - 1]], elementsSize * col, elementsSize * row);
         }
         
-    }
+    } */
+
+    // Refactor del render del mapa
+
+    mapRowCols.forEach((row, rowI) => {
+        row.forEach((col, colI) => {
+            const emoji = emojis[col];
+
+            const posX = elementsSize * (colI + 1);
+            const posY = elementsSize * (rowI + 1);
+
+            game.fillText(emoji, posX, posY);
+
+        })
+    })
+
 
     /* game.fillRect(0,0,100,100);
     game.clearRect(50,50,50,50);
