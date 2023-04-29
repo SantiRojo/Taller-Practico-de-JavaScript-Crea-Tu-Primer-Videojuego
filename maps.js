@@ -16,6 +16,7 @@ const emojis = {
   };
   
   const maps = [];
+
   maps.push(`
     IXXXXXXXXX
     -XXXXXXXXX
@@ -28,6 +29,7 @@ const emojis = {
     -XXXXXXXXX
     OXXXXXXXXX
   `);
+
   maps.push(`
     O--XXXXXXX
     X--XXXXXXX
@@ -40,6 +42,7 @@ const emojis = {
     XXXX---IXX
     XXXXXXXXXX
     `);
+    
   maps.push(`
     I-----XXXX
     XXXXX-XXXX
