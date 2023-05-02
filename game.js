@@ -197,6 +197,8 @@ function gameWinAndRecord() {
         localStorage.setItem('record_time', playerTime);
         pResult.innerHTML = 'Primera vez? Muy bien, pero ahora trata de superar tu tiempo';
     }
+
+    setTimeout(() => {location.reload()}, 5000);
     console.log({recordTime, playerTime})
 }
 
